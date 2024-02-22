@@ -5,7 +5,9 @@ using UnityEngine;
 public class DoorMechanics : MonoBehaviour
 {
     public Animator doorAnimator;
+    [SerializeField]
     private bool playerInRange = false;
+    
 
     private void update()
     {

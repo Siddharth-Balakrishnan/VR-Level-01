@@ -120,7 +120,6 @@ GameObject:
   - component: {fileID: 9574882}
   - component: {fileID: 6455900}
   - component: {fileID: 5651392111835973320}
-  - component: {fileID: 2827777696488446021}
   m_Layer: 0
   m_Name: door_1
   m_TagString: Untagged
@@ -257,23 +256,10 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 3.971819, y: 4.7400446, z: 3.9464135}
   m_Center: {x: -0.00048804283, y: 1.8700233, z: -0.22866249}
---- !u!114 &2827777696488446021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1059ba809ff8b8445b3b81450592577f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doorAnimator: {fileID: 9574882}
 --- !u!1 &174170
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,6 +376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3792558435257880167}
   - component: {fileID: 2067302747467181001}
+  - component: {fileID: 6354737556573980545}
   m_Layer: 0
   m_Name: Door Trigger
   m_TagString: Untagged
@@ -427,9 +414,23 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 3.971819, y: 4.7400446, z: 3.9464135}
   m_Center: {x: -0.00048804283, y: 1.8700233, z: -0.22866249}
+--- !u!114 &6354737556573980545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496856284076013664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1059ba809ff8b8445b3b81450592577f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorAnimator: {fileID: 9574882}
+  playerInRange: 0
