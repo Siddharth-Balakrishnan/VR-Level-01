@@ -14,6 +14,11 @@ public class JumpScareTrigger : MonoBehaviour
 
      [SerializeField]
      private bool triggered = false;
+     
+     private void Awake() 
+     {
+        jumpScareObject.SetActive(false);  
+     }
 
     void OnTriggerEnter(Collider other)
     {
@@ -26,6 +31,8 @@ public class JumpScareTrigger : MonoBehaviour
 
     IEnumerator DoJumpScare()
     {
+
+
         if (jumpScareObject != null)
         {
             jumpScareObject.SetActive(true); 
